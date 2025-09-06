@@ -1,5 +1,7 @@
 # GitStat 
 
+[Still in development...]
+
 A terminal CLI tool to display GitHub activity schemas for any user.
 
 ![img](cli_img.png)
