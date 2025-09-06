@@ -1,16 +1,16 @@
-# GitStat 📊
+# GitStat 
 
 A beautiful, terminal-adaptive CLI tool to display GitHub activity schemas for any user.
 
 ![GitStat Demo](https://via.placeholder.com/800x400?text=GitStat+Demo)
 
-## Features ✨
+## Features 
 
-- 🎨 **Beautiful dark blue theme** - Professional color scheme
-- 📏 **Terminal-adaptive** - Automatically adjusts to your terminal size  
-- 🌐 **Real GitHub data** - Uses GitHub's GraphQL API for accurate contributions
-- 🚀 **Fast & lightweight** - Built in Rust for maximum performance
-- 🎯 **Simple usage** - Just provide a username and token
+- **Beautiful dark blue theme** - Professional color scheme
+- **Terminal-adaptive** - Automatically adjusts to your terminal size  
+- **Real GitHub data** - Uses GitHub's GraphQL API for accurate contributions
+- **Fast & lightweight** - Built in Rust for maximum performance
+- **Simple usage** - Just provide a username and token
 
 ## Installation 🔧
 
@@ -26,7 +26,7 @@ cd gitstat
 cargo install --path .
 ```
 
-## Usage 💻
+## Usage 
 
 ### Basic usage
 ```bash
@@ -49,7 +49,7 @@ gitstat nathbns
 gitstat octocat
 ```
 
-## GitHub Token 🔑
+## GitHub Token 
 
 You need a GitHub personal access token to use this tool:
 
@@ -58,7 +58,7 @@ You need a GitHub personal access token to use this tool:
 3. Select **only** the `read:user` permission
 4. Copy the token and use it with the `--token` flag or `GITHUB_TOKEN` environment variable
 
-## Output 📈
+## Output 
 
 GitStat displays:
 - User information (name, repos, followers, following)
@@ -66,7 +66,7 @@ GitStat displays:
 - Statistics (active days, max contributions per day, averages)
 - Terminal-adaptive layout that works on any screen size
 
-## Color Scheme 🎨
+## Color Scheme 
 
 - **Dark gray**: No contributions
 - **Dark blue**: 1-2 contributions  
@@ -74,20 +74,17 @@ GitStat displays:
 - **Bright blue**: 6-10 contributions
 - **Very bright blue**: 11+ contributions
 
-## Requirements 📋
+## Requirements 
 
 - Rust 1.70+ (for installation from source)
 - GitHub personal access token
 - Terminal with color support
 
-## License 📄
+## License 
 
 MIT License - see LICENSE file for details.
 
-## Contributing 🤝
+## Contributing 
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Author 👨‍💻
-
-Created by [Nathan Ben Soussan](https://github.com/nathbns)
