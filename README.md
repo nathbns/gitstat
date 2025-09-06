@@ -1,18 +1,17 @@
 # GitStat 
 
-A beautiful, terminal-adaptive CLI tool to display GitHub activity schemas for any user.
+A terminal CLI tool to display GitHub activity schemas for any user.
 
-![GitStat Demo](https://via.placeholder.com/800x400?text=GitStat+Demo)
+![img](cli_img.png)
 
 ## Features 
 
-- **Beautiful dark blue theme** - Professional color scheme
-- **Terminal-adaptive** - Automatically adjusts to your terminal size  
+- **Dark blue theme**
 - **Real GitHub data** - Uses GitHub's GraphQL API for accurate contributions
-- **Fast & lightweight** - Built in Rust for maximum performance
+- **Fast & lightweight** - Built in Rust for max perf
 - **Simple usage** - Just provide a username and token
 
-## Installation 🔧
+## Installation 
 
 ### From crates.io (Recommended)
 ```bash
@@ -62,23 +61,15 @@ You need a GitHub personal access token to use this tool:
 
 GitStat displays:
 - User information (name, repos, followers, following)
-- Beautiful contribution calendar with color-coded activity levels
+- Contribution calendar with color-coded activity levels
 - Statistics (active days, max contributions per day, averages)
-- Terminal-adaptive layout that works on any screen size
 
-## Color Scheme 
-
-- **Dark gray**: No contributions
-- **Dark blue**: 1-2 contributions  
-- **Medium blue**: 3-5 contributions
-- **Bright blue**: 6-10 contributions
-- **Very bright blue**: 11+ contributions
 
 ## Requirements 
 
-- Rust 1.70+ (for installation from source)
+- Rust 1.70+ 
 - GitHub personal access token
-- Terminal with color support
+- Terminal with color support (**Ghostty** recommended)
 
 ## License 
 
@@ -86,5 +77,5 @@ MIT License - see LICENSE file for details.
 
 ## Contributing 
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome!
 
