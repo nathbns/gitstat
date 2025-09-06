@@ -221,10 +221,10 @@ fn display_user_profile(user: &GitHubUser, calendar: &ContributionCalendar) {
     let (term_width, _) = if let Some((Width(w), Height(h))) = terminal_size() {
         (w as usize, h as usize)
     } else {
-        (80, 24) // fallback
+        (80, 24) 
     };
     
-    // Calculate available space for the calendar (each square is now 2 chars wide)
+    // Calculate available space for the calendar 
     let calendar_width = std::cmp::min(53, term_width.saturating_sub(40) / 2);
     
     draw_header(user, term_width);
@@ -306,11 +306,11 @@ fn draw_contribution_calendar(calendar: &ContributionCalendar, calendar_width: u
                 let week = &calendar.weeks[week_idx];
                 if let Some(day) = week.contribution_days.get(row) {
                     let symbol = match day.contribution_count {
-                        0 => "■".truecolor(45, 51, 59),        // Gris très foncé
-                        1..=2 => "■".truecolor(14, 68, 121),   // Bleu foncé
-                        3..=5 => "■".truecolor(33, 110, 177),  // Bleu moyen
-                        6..=10 => "■".truecolor(52, 152, 219), // Bleu clair
-                        _ => "■".truecolor(116, 185, 255),     // Bleu très clair
+                        0 => "■".truecolor(45, 51, 59),        
+                        1..=2 => "■".truecolor(14, 68, 121),   
+                        3..=5 => "■".truecolor(33, 110, 177),  
+                        6..=10 => "■".truecolor(52, 152, 219), 
+                        _ => "■".truecolor(116, 185, 255),     
                     };
                     print!("{}", symbol);
                 } else {
@@ -326,11 +326,11 @@ fn draw_contribution_calendar(calendar: &ContributionCalendar, calendar_width: u
     // Legend with actual colors
     let legend_padding = (term_width.saturating_sub(35)) / 2;
     print!("\n{}   Less  ", " ".repeat(legend_padding));
-    print!("{}", "■".truecolor(45, 51, 59));        // Gris très foncé
-    print!("{}", "■".truecolor(14, 68, 121));       // Bleu foncé
-    print!("{}", "■".truecolor(33, 110, 177));      // Bleu moyen
-    print!("{}", "■".truecolor(52, 152, 219));      // Bleu clair
-    print!("{}", "■".truecolor(116, 185, 255));     // Bleu très clair
+    print!("{}", "■".truecolor(45, 51, 59));        
+    print!("{}", "■".truecolor(14, 68, 121));      
+    print!("{}", "■".truecolor(33, 110, 177));     
+    print!("{}", "■".truecolor(52, 152, 219));      
+    print!("{}", "■".truecolor(116, 185, 255));     
     println!("  More");
 }
 
